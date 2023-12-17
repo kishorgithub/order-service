@@ -8,13 +8,9 @@ import lombok.Data;
 @Data
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class OrderRequestTO {
-    @NotEmpty
-    private String customerId;
+
     private Double price;
-    private String assetId;
-    private Double quantity;
-    private String orderType; //TODO: Write enum - OFFER, BID
-    private Boolean stopLoss;
-    private Double stopLossPrice;
-    private Boolean marketOrder;
+    private int quantity;
+    private Boolean limit;
+    private Boolean side;
 }
