@@ -1,0 +1,5 @@
+rootProject.name = 'order-service'
+include 'app'
+include 'service'
+include 'model'
+
